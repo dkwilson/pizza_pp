@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha512-znmTf4HNoF9U6mfB6KlhAShbRvbt4CvCaHoNV0gyssfToNQ/9A0eNdUbvsSwOIUoJdMjFG2ndSvr0Lo3ZpsTqQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="bg-transparent">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light navigationbar">
+              <a href="" class="navbar-brand">
+                <img src="images/logo.png" alt="logo" style="width: 200px" />
+              </a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-target="#navi"
+                data-toggle="collapse"
+              >
+                <span class="navbar-toggler-icon">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-left">
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Catering</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Franchise</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Locations</a>
+                  </li>
+                </ul>
+
+                <ul class="list-inline social-icons-header">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- start main -->
+
+    <div class="main-wrapper">
+      <div class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="banner-inner">
+                <h2>The Finest Ingredients = The Best Tasting Pizza</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quaerat nostrum mollitia non alias nam culpa in excepturi
+                  rerum, maiores cum voluptas voluptatibus expedita laborum?
+                  Odio voluptates non autem nihil iusto!
+                </p>
+                <a href="" class="btn-seemore">See More</a>
+              </div>
+            </div>
+
+            <div class="col-sm-4"></div>
+
+            <div class="col-sm-4 text-right">
+              <div class="banner-inner">
+                <h2>Modern Recipes For Great Tasting Food</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime, recusandae, enim animi, blanditiis labore at soluta
+                  ipsum dolorum rem nam ducimus vel iste doloribus laborum rerum
+                  fugit? Beatae, cum provident?
+                </p>
+                <a href="" class="btn-seemore">See More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="bg"></div>
+    </div>
+
+    <div class="box-main-wrapper">
+      <div id="1b" class="bgcolor-1 box-main">
+        <div class="pizza-img-box">
+          <div class="box">
+            <img class="left" src="./images/pizza.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="2b" class="bgcolor-2">
+        <div class="pizza-img-box">
+          <div class="box">
+            <img class="right" src="./images/pizza-right.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha512-jCaU0Dp3IbMDlZ6f6dSEQSnOrSsugG6F6YigRWnagi7HoOLshF1kwxLT4+xCZRgQsTNqpUKj6WmWOxsu9l3URA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#1b").hover(
+          function () {
+            $("#2b").addClass("blur");
+          },
+          function () {
+            $("#2b").removeClass("blur");
+          }
+        );
+
+        $("#2b").hover(
+          function () {
+            $("#1b").addClass("blur");
+          },
+          function () {
+            $("#1b").removeClass("blur");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
